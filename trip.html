@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Budget Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1920&h=1080');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .place-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        section:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        section:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        section:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        section:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        section:nth-child(5) {
+            animation-delay: 1.0s;
+        }
+
+        section:nth-child(6) {
+            animation-delay: 1.2s;
+        }
+
+        section:nth-child(7) {
+            animation-delay: 1.4s;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 bg-opacity-80 text-white font-sans min-h-screen pb-12">
+    <div class="max-w-6xl mx-auto p-6 bg-gray-800 bg-opacity-90 shadow-lg rounded-lg mt-12 backdrop-blur-sm">
+        <h1
+            class="text-4xl font-bold text-center text-teal-400 mb-8 animate-fade-in hover:text-teal-300 transition-colors duration-300">
+            Manali Trip Budget Plan
+        </h1>
+
+        <!-- Transportation Section -->
+        <section class="mb-8 hover:bg-gray-700 p-6 rounded-lg transition-all duration-300">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Transportation:</h2>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                <li>Delhi to Manali bus: ₹1,700</li>
+                <li>Manali to Delhi bus: ₹1,700</li>
+                <li class="font-semibold text-white">Total Transportation: ₹3,400</li>
+            </ul>
+        </section>
+
+        <!-- Accommodation Section -->
+        <section class="mb-8 hover:bg-gray-700 p-6 rounded-lg transition-all duration-300">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Accommodation:</h2>
+            <p class="text-gray-300">Hotel for 2 nights: ₹4,500</p>
+        </section>
+
+        <!-- Tourist Places Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-6">Tourist Places (3-Day Plan):</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Day 1 Card -->
+                <div class="place-card bg-gray-700 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-teal-300 mb-4">Day 1</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Mall Road</li>
+                        <li>Club House</li>
+                        <li>Hadimba Temple</li>
+                        <li>Vashishtha Temple</li>
+                        <li>Manu Temple</li>
+                    </ul>
+                </div>
+
+                <!-- Day 2 Card -->
+                <div class="place-card bg-gray-700 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-teal-300 mb-4">Day 2</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Solang Valley Activities</li>
+                        <li>Scenic Photography</li>
+                        <li>Adventure Sports</li>
+                    </ul>
+                </div>
+
+                <!-- Day 3 Card -->
+                <div class="place-card bg-gray-700 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-teal-300 mb-4">Day 3</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Atal Tunnel</li>
+                        <li>Sissu</li>
+                        <li>Rohtang Pass</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entry Fees Section -->
+        <section class="mb-8 hover:bg-gray-700 p-6 rounded-lg transition-all duration-300">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Entry Fees & Permits:</h2>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                <li>Hadimba Temple: ₹30 per person = ₹60</li>
+                <li>Club House: ₹40 per person = ₹80</li>
+                <li>Solang Valley activities (optional): ₹500–₹1,000</li>
+                <li>Rohtang Pass permit: ₹500</li>
+                <li>Atal Tunnel permit: ₹200</li>
+            </ul>
+        </section>
+
+        <!-- Food & Emergency Section -->
+        <section class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="place-card bg-gray-700 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-100 mb-4">Food Expenses:</h2>
+                <p class="text-gray-300">For 2 days: ₹1,400</p>
+            </div>
+            <div class="place-card bg-gray-700 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold text-gray-100 mb-4">Emergency Fund:</h2>
+                <p class="text-gray-300">Recommended: ₹2,000</p>
+            </div>
+        </section>
+
+        <!-- Total Budget Section -->
+        <section class="bg-gray-700 p-6 rounded-lg transition-all duration-300">
+            <h2 class="text-2xl font-bold text-teal-300 mb-4">Total Budget Breakdown</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p class="text-xl text-gray-100">Total Budget:</p>
+                    <p class="text-3xl font-bold text-teal-400">₹14,740</p>
+                </div>
+                <div>
+                    <p class="text-xl text-gray-100">Per Person:</p>
+                    <p class="text-3xl font-bold text-teal-400">₹8,000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="mt-12">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-6">Popular Destinations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="trips">
+
+
+
+                <script>
+                    const trip = () => {
+                        const data = [
+                            { name: "Mall Road", des: "The bustling heart of Manali with shops and cafes", images: 'https://discoverkullumanali.in/wp-content/uploads/2020/01/Aerial-view-of-mall-road-of-Manali-town-936x530.jpg' },
+                            { name: "Club House", des: "Recreation center with indoor games and activities", images: 'https://i.ytimg.com/vi/Rj2E4jf0TXY/maxresdefault.jpg' },
+                            { name: "Hadimba Temple", des: "Ancient wooden temple dedicated to Hidimba Devi", images: 'https://i0.wp.com/weekendyaari.in/wp-content/uploads/2024/09/hadimba-devi-temple-weekend-yaari-.webp?fit=810%2C540&ssl=1' },
+                            { name: "Vashishtha Temple", des: "Ancient temple with hot springs", images: 'https://www.go2india.in/himachal/images/b-vashisht.jpg' },
+                            { name: "Manu Temple", des: "Historic temple dedicated to sage Manu", images: 'https://wandersky.in/wp-content/uploads/2024/12/manu-temple-near-manali.jpg' },
+                            { name: "Solang Valley", des: "Adventure sports and scenic mountain views", images: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Solang_Valley.jpg/1200px-Solang_Valley.jpg' },
+                            { name: "Atal Tunnel", des: "World's longest highway tunnel above 10,000 feet", images: 'https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2020/11/Feature-image-Atal-Tunnel.jpg' },
+                            { name: "Sissu", des: "Picturesque village with waterfall views", images: 'https://www.manaliworldtravel.com/images/manali/650X500/sissu-manali-view.webp' },
+                            { name: "Rohtang Pass", des: "High mountain pass with snow views", images: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBEuT2x1g70hSSNSMpw2T4a6tVtM7Qq-UcIA&s' }
+                        ];
+
+                        let bag = '';
+
+                        data.forEach((place) => {
+                            if (place.images && place.des) { // Only show cards with both images and descriptions
+                                bag += `
+                <div class="place-card bg-gray-700 rounded-lg overflow-hidden">
+                    <img src="${place.images}"
+                        alt="${place.name}"
+                        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-teal-300 mb-2">${place.name}</h3>
+                        <p class="text-gray-300">${place.des}</p>
+                    </div>
+                </div>
+            `;
+                            }
+                        });
+                        return bag;
+                    };
+
+                    document.getElementById('trips').innerHTML = trip();
+                </script>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
